@@ -1,0 +1,8 @@
+.notLoggedIn h1 {
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+.notLoggedIn button {
+    padding: 30px;
+}

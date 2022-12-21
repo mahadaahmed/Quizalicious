@@ -1,0 +1,82 @@
+.homeScreen .smallLogo {
+    display: inline-block;
+    height: 20px;
+    margin: 0 20px 0 20px;
+}
+
+.homeScreen .owl {
+    margin: 30px 0;
+}
+
+.homeScreen .showOwl {
+    font-size: 14px;
+    display: block;
+    height: 40px;
+    transition: height 1s;
+    overflow:hidden;
+}
+
+.homeScreen .showOwl.hide {
+    height: 0;
+}
+
+.homeScreen button {
+    height: 100px;
+    width: 400px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.homeScreen .buttonWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    align-items: bottom;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+    .homeScreen button {
+        height: 80px;
+        width: 80vw;
+    }
+}
+
+.homeScreen .menuTitle {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: slightAnimation 2s linear infinite both;
+}
+
+@keyframes slightAnimation {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .homeScreenView .logo {
+        height: 100px !important;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .homeScreenView button {
+        width: 330px;
+        height: 60px;
+    }
+
+    .homeScreen .owl {
+        margin-bottom: 10px;
+    }
+}

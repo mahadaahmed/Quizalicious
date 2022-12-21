@@ -1,0 +1,60 @@
+header {
+    width: 100%;
+    background-color: #1a1a1a;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+header .headerWidthRestricted {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    height: 60px;
+}
+
+header .homeButton {
+    position: absolute;
+    left: 10px;
+    padding-top: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    /* float: left; */
+    height: 60px;
+}
+
+header .homeButton img {
+    height: 40px;
+    margin-top: 2px;
+}
+
+header img.profile {
+    float: right;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 23px 5px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+header .triangle {
+    margin-top: 24px;
+    margin-left: 5px;
+    float: right;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 13px solid white;
+
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+
+    box-shadow: 0px 0px 23px 5px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+header .triangle.rotate90 {
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+}

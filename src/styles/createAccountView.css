@@ -1,0 +1,91 @@
+.CreateAccountView {
+    display: inline-block;
+    position: relative;
+}
+
+.CreateAccountView img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.CreateAccountView .bubo {
+    position: absolute;
+    margin: 0;
+    bottom: 50px;
+    left: 237px;
+    height: 180px;
+    z-index: -1;
+
+    transform-origin: left bottom;
+    animation: bubo 8s infinite;
+}
+
+@keyframes bubo {
+    from,
+    to {
+        transform: rotate(-2deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+}
+
+.CreateAccountView .quiza {
+    position: absolute;
+    width: 100px;
+    bottom: -55px;
+    left: 7px;
+}
+
+.registerBox {
+    background-color: #2a2a2a;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+    
+    text-align: left;
+    font-size: 14px;
+    
+    border-radius: 10px;
+    border: 1px solid #737373;
+    box-shadow: 0px 0px 53px 5px rgba(0, 0, 0, 0.20);
+}
+
+.registerBox input {
+    width: 190px;
+    border-radius: 5px;
+    padding: 4px;
+    border: 1px solid rgb(126, 126, 126);
+}
+
+.registerBox button {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+.registerBox a {
+    display: block;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.CreateAccountView .blob {
+    /* display: none; */
+    animation: none;
+}
+
+@media screen and (max-width: 600px) {
+    .CreateAccountView .bubo {
+        display:none;
+        position: relative;
+        top: 10px;
+        left: 0;
+        animation: none;
+        z-index: -1;
+    }
+
+}

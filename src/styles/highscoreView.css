@@ -1,0 +1,13 @@
+.highscoreView table {
+    max-width: 600px;
+}
+    
+.highscoreView button {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .highscoreView h2 {
+        margin-top: 10px;
+    }
+}

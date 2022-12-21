@@ -1,0 +1,60 @@
+.promiseNoData .laden {
+    animation-name: laden_rot;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-iteration-count: infinite;
+}
+
+.promiseNoData .logo {
+    width: 120px;
+    margin: 50px 0 10px 0;
+    animation-name: laden_rot;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes laden_rot {
+    0% {
+        transform: perspective(100px) rotateY(0deg)
+    }
+
+    100% {
+        transform: perspective(100px) rotateY(360deg)
+    }
+}
+
+.promiseNoData {
+    width: 100%;
+    height: calc(90vh);
+    overflow: hidden;
+}
+
+.promiseNoData .loading_bar {
+    animation-name: load;
+    animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier();
+    animation-iteration-count: infinite; 
+    height: 16px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: hotpink;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+@keyframes load {
+    0% {
+        width: 0px
+    }
+
+    50% {
+        width: 400px;
+        background-color: cyan;
+    }
+
+    100% {
+        width: 0px;
+        background-color: hotpink
+    }
+}

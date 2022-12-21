@@ -1,0 +1,67 @@
+.profileMenu {
+    position: absolute;
+    right: 10px;
+    top: 70px;
+    width: 160px;
+    background-color: #1a1919;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    overflow: hidden;
+    z-index: 1;
+
+    cursor: pointer;
+    user-select: none;
+
+    animation: .5s linear 0s both appear2;
+}
+
+.profileMenu .item:nth-child(1) {
+    cursor:default;
+}
+
+.profileMenu.hide {
+    animation: .5s linear 0s both disappear2;
+}
+
+@keyframes appear2 {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(none);
+    }
+}
+
+@keyframes disappear2 {
+    from {
+        opacity: 1;
+        filter: blur(none);
+    }
+    to {
+        opacity: 0;
+        filter: blur(10px);
+    }
+}
+.profileMenu > .divider {
+    border-top: 1px solid #30363d;
+}
+
+.profileMenu > .item {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #c9d1d9;
+    font-size: 14px;
+    padding: 4px 8px 4px 16px;
+}
+
+.profileMenu > .item:hover {
+    background-color: var(--quizPurple);
+}
+
+.profileMenu > .item:first-child:hover {
+    background-color: inherit;
+}

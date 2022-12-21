@@ -1,0 +1,59 @@
+.profileView .seasonsProfile {
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid white;
+}
+
+.profileView .seasons {
+    max-width:600px;
+}
+
+.profileView img.profilePic {
+    height: 15%;
+    min-height: 150px;
+    min-width: 150px;
+    max-height: 250px;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 23px 5px rgba(0, 0, 0, 0.10);
+}
+
+.profileView .profileInfo {
+    float: left;
+}
+
+.profileView {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profileView button {
+    margin-top: 40px;
+}
+
+@media screen and (max-width:600px) {
+    .profileView .profileInfo {
+        float:none;
+    }
+    .profileView img.profilePic {
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width:999px) {
+    .profileView .seasons {
+        width:350px;
+    }
+}
+@media screen and (max-width:800px) {
+    .profileView .seasons {
+        width:300px;
+    }
+    .profileView img.profilePic {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
