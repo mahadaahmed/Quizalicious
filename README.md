@@ -1,9 +1,13 @@
 
 ## Project Quizalicious
+Students @KTH
+By: Mahad, Axel, Abhinav, Magnus
 
 A quiz based game with leaderboard!
 
 Try to get on the leaderboard by completing a season!
+https://quizalicious-a9e5a.web.app/#Login
+
 
 A season consists of 2 easy games, 2 medium difficulty games and one hard difficulty game.
 
