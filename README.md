@@ -1,7 +1,6 @@
 
 ## Project Quizalicious
-Students @KTH
-By: Mahad, Axel, Abhinav, Magnus
+Mahad, Axel, Abhinav, Magnus, students @KTH
 
 A quiz based game with leaderboard!
 
